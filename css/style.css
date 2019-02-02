@@ -304,3 +304,34 @@ footer .container {
     border: 1px solid #555555;
     margin-left: 35px;
 }
+
+/* ANIMATIONS */
+
+.iphone-on {
+    position: absolute;
+    right: 175px;
+    top: 112px;
+    width: 54%;
+}
+
+.iphone-btn {
+    position: absolute;
+    right: 200px;
+}
+
+.js-wp-2 {
+    opacity: 0;
+}
+
+.js-wp-2.animated {
+    opacity: 1;
+}
+
+.js-wp-3 {
+    opacity: 0;
+    animation-delay: 3.2s;
+}
+
+.js-wp-3.animated {
+    opacity: 1;
+}
