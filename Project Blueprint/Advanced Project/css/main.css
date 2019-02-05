@@ -1,0 +1,419 @@
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.block {
+    display: block;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+/*HELPER CLASS END*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.wrapper {
+    max-width: 880px;
+    margin: auto;
+    position: relative;
+    background: #ffffff;
+    padding: 0 55px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    background: #242424;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.bigPara {
+    font-size: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    line-height: 45px;
+    padding: 0px 30px;
+}
+
+.div-red-rectangle {
+    background-image: url(../img/red-rectangle.png);
+    background-size: cover;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 20px 70px;
+    font-size: 22px;
+    line-height: 37px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    margin-left: -70px;
+    margin-right: -70px;
+}
+
+.div-red-rectangle:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid #7d0000;
+    border-left: 16px solid transparent;
+    bottom: -14px;
+    left: -1px;
+    right: 0;
+}
+
+.div-red-rectangle:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid #7d0000;
+    border-right: 16px solid transparent;
+    right: -1px;
+    bottom: -14px;
+}
+
+.nth-paras {
+    padding-top: 30px;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+}
+
+.person {
+    float: right;
+    margin-top: -50px;
+    position: relative;
+}
+
+.greyish {
+    background: #f0f0f0;
+    padding-left: 55px;
+    margin-left: -55px;
+    margin-right: -55px;
+}
+
+.greyish:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.paraIntro {
+    padding: 20px 0px;
+}
+
+.yellow-arrow {
+    display: inline;
+    position: relative;
+}
+
+.yellow-arrow:after {
+    content: '';
+    background: url('../img/arrow.png') no-repeat 0 0;
+    display: block;
+    width: 68px;
+    height: 42px;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+
+.person-2 {
+    margin-left: -90px;
+    float: left;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+h4.callout {
+    background: #ca0000;
+    padding: 15px 0px;
+    display: block;
+    margin: 50px 330px 20px 180px;
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+
+h4.callout:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 50px solid #ca0000;
+    border-right: 27px solid transparent;
+    right: -27px;
+    top: 0px;
+}
+
+.padding-left-20 {
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.silverHeading {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+    background: #f2f2f4;
+    padding: 20px 85px;
+    margin-left: -55px;
+    margin-right: -55px;
+}
+
+
+
+/*MEDIA QUERIES */
+
+@media only screen and (max-width: 931px) {
+    .div-red-rectangle,
+    .silverHeading {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }
+   
+    .wrapper {
+        padding: 0 15px;
+    }
+    .person-2 {
+        margin-left: -10px;
+    }
+
+    .greyish {
+        background: #f0f0f0;
+         margin-left: -15px !important;
+        margin-right: -15px !important;
+        padding: 0 30px;
+        
+       
+    }
+    .div-red-rectangle:after,
+    .div-red-rectangle:before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    h4.callout {
+        margin: 50px 30px 20px 180px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    .person {
+        display: none;
+    }
+    .yellow-arrow {
+        display: none;
+    }
+    
+    
+}
+@media only screen and (max-width: 649px) {
+    
+    .silverHeading {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .person-2 {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    h4.callout {
+        padding: 15px 0px;
+        display: block;
+        color: white;
+        font-weight: 600;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        max-width: 300px;
+    }
+    h4.callout:after {
+        display: none;
+    }
+}
+
+
+    
+@media only screen and (max-width: 480px) {
+        .div-red-rectangle
+         {
+            padding: 20px 30px;
+        }
+        
+    }
